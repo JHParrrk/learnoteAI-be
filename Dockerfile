@@ -38,7 +38,7 @@ FROM base
 COPY --from=build /app /app
 
 # Include .env file in the final image
-COPY .env /app/.env
+# [삭제됨] COPY .env /app/.env 
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
